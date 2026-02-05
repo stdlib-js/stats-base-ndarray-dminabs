@@ -2,6 +2,51 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-02-05)
+
+<section class="features">
+
+### Features
+
+-   [`06e3710`](https://github.com/stdlib-js/stdlib/commit/06e37102b1e86507533abe95f50c4c44e4ddcf54) - add C implementation for `stats/base/ndarray/dminabs` [(#10046)](https://github.com/stdlib-js/stdlib/pull/10046)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`06e3710`](https://github.com/stdlib-js/stdlib/commit/06e37102b1e86507533abe95f50c4c44e4ddcf54) - **feat:** add C implementation for `stats/base/ndarray/dminabs` [(#10046)](https://github.com/stdlib-js/stdlib/pull/10046) _(by Samarth Kolarkar, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Samarth Kolarkar
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.0">
 
 ## 0.1.0 (2026-01-31)
