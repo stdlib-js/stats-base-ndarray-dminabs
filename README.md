@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@esm/index.mjs';
+import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@v0.1.1-esm/index.mjs';
 ```
 
 #### dminabs( arrays )
@@ -99,7 +99,7 @@ The function has the following parameters:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@esm/index.mjs';
+import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@v0.1.1-esm/index.mjs';
 
 var xbuf = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
