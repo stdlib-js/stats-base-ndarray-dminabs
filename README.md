@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@deno/mod.js';
+import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@v0.1.1-deno/mod.js';
 ```
 
 #### dminabs( arrays )
@@ -94,7 +94,7 @@ The function has the following parameters:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@deno/mod.js';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@deno/mod.js';
+import dminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-dminabs@v0.1.1-deno/mod.js';
 
 var xbuf = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
