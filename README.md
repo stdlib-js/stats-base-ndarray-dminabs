@@ -221,49 +221,49 @@ double stdlib_stats_dminabs( const struct ndarray *arrays[] );
 #include <stdio.h>
 
 int main( void ) {
-   // Create a data buffer:
-   const double data[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+    // Create a data buffer:
+    const double data[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
 
-   // Specify the number of array dimensions:
-   const int64_t ndims = 1;
+    // Specify the number of array dimensions:
+    const int64_t ndims = 1;
 
-   // Specify the array shape:
-   int64_t shape[] = { 4 };
+    // Specify the array shape:
+    int64_t shape[] = { 4 };
 
-   // Specify the array strides:
-   int64_t strides[] = { 2*STDLIB_NDARRAY_FLOAT64_BYTES_PER_ELEMENT };
+    // Specify the array strides:
+    int64_t strides[] = { 2*STDLIB_NDARRAY_FLOAT64_BYTES_PER_ELEMENT };
 
-   // Specify the byte offset:
-   const int64_t offset = 0;
+    // Specify the byte offset:
+    const int64_t offset = 0;
 
-   // Specify the array order:
-   const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+    // Specify the array order:
+    const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
 
-   // Specify the index mode:
-   const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+    // Specify the index mode:
+    const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
 
-   // Specify the subscript index modes:
-   int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
-   const int64_t nsubmodes = 1;
+    // Specify the subscript index modes:
+    int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+    const int64_t nsubmodes = 1;
 
-   // Create an ndarray:
-   struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
-   if ( x == NULL ) {
-      fprintf( stderr, "Error allocating memory.\n" );
-      exit( 1 );
-   }
+    // Create an ndarray:
+    struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
+    if ( x == NULL ) {
+        fprintf( stderr, "Error allocating memory.\n" );
+        exit( 1 );
+    }
 
-   // Define a list of ndarrays:
-   const struct ndarray *arrays[] = { x };
+    // Define a list of ndarrays:
+    const struct ndarray *arrays[] = { x };
 
-   // Compute the minimum absolute value:
-   double v = stdlib_stats_dminabs( arrays );
+    // Compute the minimum absolute value:
+    double v = stdlib_stats_dminabs( arrays );
 
-   // Print the result:
-   printf( "min: %lf\n", v );
+    // Print the result:
+    printf( "minabs: %lf\n", v );
 
-   // Free allocated memory:
-   stdlib_ndarray_free( x );
+    // Free allocated memory:
+    stdlib_ndarray_free( x );
 }
 ```
 
@@ -322,8 +322,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-ndarray-dminabs.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-ndarray-dminabs
 
-[test-image]: https://github.com/stdlib-js/stats-base-ndarray-dminabs/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/stats-base-ndarray-dminabs/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/stats-base-ndarray-dminabs/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-ndarray-dminabs/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-ndarray-dminabs/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-ndarray-dminabs?branch=main
