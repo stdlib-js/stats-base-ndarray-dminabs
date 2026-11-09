@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,42 +16,35 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the minimum absolute value of a one-dimensional double-precision floating-point ndarray.
+* Computes the minimum absolute value of a one-dimensional double-precision floating-point ndarray.
 *
-* @module @stdlib/stats-base-ndarray-dminabs
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns minimum absolute value
 *
 * @example
 * var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
-* var dminabs = require( '@stdlib/stats-base-ndarray-dminabs' );
 *
 * var x = new Float64Vector( [ -1.0, 3.0, -4.0, 2.0 ] );
 *
 * var v = dminabs( [ x ] );
 * // returns 1.0
 */
-
-// MODULES //
-
-var join = require( 'path' ).join;
-var tryRequire = require( '@stdlib/utils-try-require' );
-var isError = require( '@stdlib/assert-is-error' );
-var main = require( './main.js' );
-
-
-// MAIN //
-
-var dminabs;
-var tmp = tryRequire( join( __dirname, './native.js' ) );
-if ( isError( tmp ) ) {
-	dminabs = main;
-} else {
-	dminabs = tmp;
-}
+declare function dminabs( arrays: [ float64ndarray ] ): number;
 
 
 // EXPORTS //
 
-module.exports = dminabs;
+export = dminabs;
